@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div id="player">
+        <!-- 播放器 -->
+        <audio id="audio"></audio>
+
+        <div class="photo">
+            <img class="auto-img">
+        </div>
+        <div class="lrc-box po-r">
+            <div id="lrc" class="po-a">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>          
+        </div>
+        <div class="progress po-r">
+            <div class="active-progress po-a"></div>
+            <div class="mask po-a"></div>
+            <div class="layer po-a"></div>
+            <span class="active-time po-a">00:00</span>
+            <span class="end-time po-a">00:00</span>
+        </div>
+        <div class="controls">
+            <div class="mode po-r" data-id="1">
+                <img src="./icon/order.png" class="auto-img">
+            </div>
+            <div class="preone">
+                <img src="./icon/preone1.png" class="auto-img">
+            </div>
+            <div class="play-pause">
+                <img src="./icon/play.png" class="auto-img" name="0">
+            </div>
+            <div class="nextone">
+                <img src="./icon/nextone1.png" class="auto-img">
+            </div>
+            <div class="list">
+                <img src="./icon/list.png" class="auto-img">
+            </div>
+        </div>
+        <div class="songLists">
+            <div class="song-nav po-r">
+                <p class="title po-a">歌曲列表</p>
+                <span class="lis-icon"></span>
+            </div>
+            <div class="songs">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jq3.4.1.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./js/lrc.js"></script>
+    <script src="./js/song.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+
+</html>
